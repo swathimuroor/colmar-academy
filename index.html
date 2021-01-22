@@ -22,12 +22,15 @@
     <!-- Navbar Component -->
 <nav class="navbar navbar-expand-lg d-flex flex-row" >
     <div class="container-fluid">
-        <a class="navbar-brand text-uppercase" href="#">
-            <img src="images/ic-logo.svg" alt="logo" height="50rem;" > 
+        <a class="navbar-brand text-uppercase d-none d-md-flex" href="#">
+            <img src="images/ic-logo.svg" alt="logo" style="height: 2.75rem;" > 
             <span class="font-weight-bold h2 text-dark pb-0">colmar</span>
             <span class="text-secondary h2 font-weight-light" >academy</span>
         </a>
-        <nav class="d-flex flex-row-reverse">
+        <nav class="d-flex flex-row-reverse d-md-none ">
+            <img src="images/ic-logo.svg" alt="logo" style="height: 2.75rem;" > 
+        </nav>
+        <nav class="flex-row-reverse d-none d-md-flex ">
             <div>  
                 <a class="navbar-brand text-dark" href="#">On Campus </a>
                 <a class="navbar-brand text-dark" href="#">Online </a>
@@ -35,16 +38,23 @@
                 <a class="navbar-brand text-dark" href="#">Sign in </a>
             </div> 
         </nav>
+        <nav class="d-flex flex-row-reverse d-md-none ">
+            <div >
+                <a class="p-3 "><img src="images/ic-on-campus.svg" style="height: 2.5rem;" alt=""></a>
+                <a class="p-3"><img src="images/ic-online.svg" style="height: 2.5rem;" alt=""></a>
+                <a class="p-3"><img src="images/ic-login.svg" style="height: 2.5rem;" alt=""></a>
+            </div>
+        </nav>
     </div>
 </nav>
      
 <div class="container-fluid">
         <!-- banner row -->
-    <div class="row align-items-center grey_background" >
-        <div class="col-7 p-5">
-            <img src="images/banner.jpg" class="d-block w-100" alt="banner">
+    <div class="row align-items-center grey_background pb-3" >
+        <div class="col-md-7 ">
+            <img src="images/banner.jpg" class="d-block w-100 p-4" alt="banner">
         </div>
-        <div class="col-5 ">
+        <div class="col-md-5 ">
             <p class="h1">Learn something new everyday</p>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -56,9 +66,9 @@
     </div>
        
     <!-- information row -->
-    <div class="row align-items-center" >
-        <div class="col-7 p-5 border-right" >
-            <img src="images/information-main.jpg" class="d-block w-100" alt="information-main">
+    <div class="row align-items-center pb-4" >
+        <div class="col-md-7 p-2 border-right" >
+            <img src="images/information-main.jpg" class="d-block w-100 p-4 img-fluid" alt="information-main">
             <p class="h2  pt-4 font-weight-bold">
                 It doesn't hurt to keep practicing 
             </p>
@@ -68,12 +78,13 @@
             </p>
             <p>~Emanuel, Sr Strategist st Hiring.com</p>
         </div>   
-        <div class="col-5 pt-4" >
+        <div class="col-md-5" >
             <div class="row d-flex p-2 list_hover">
-                <div class="col-5">
-                    <img src="images/information-orientation.jpg" class="d-block w-100" alt="orientation">
+                <div class="col-md-5 pt-3">
+                    <img src="images/information-orientation.jpg" class="img-fluid d-none d-md-flex" alt="orientation">
+                    <img src="images/information-orientation-mobile.jpg" class="img-fluid d-block d-md-none" alt="orientation_mob">
                 </div>
-                <div class="col-7 text-secondary pt-4" >
+                <div class="col-md-7 text-secondary pt-4" >
                     <p class="h6 text-dark">Orientation Date </p>
                     <p>
                         Tue 10/11 & Wed 10/12: 8am to 3pm
@@ -82,10 +93,11 @@
                 </div>
             </div>
             <div class="row d-flex  p-2 list_hover" >
-                <div class="col-5">
-                    <img src="images/information-campus.jpg" class="d-block w-100" alt="campus">
+                <div class="col-md-5">
+                    <img src="images/information-campus.jpg" class="img-fluid d-none d-md-flex" alt="campus">
+                    <img src="images/information-campus-mobile.jpg" class="img-fluid d-block d-md-none" alt="campus_mob">
                 </div>
-                <div class="col-7 text-secondary pt-4" >
+                <div class="col-md-7 text-secondary pt-4" >
                     <p class="h6 text-dark">Our Campus </p>
                     <p>
                         Find which campus is close by you
@@ -93,11 +105,12 @@
                     <a  href="#">Read more </a>
                 </div>
             </div>
-            <div class="row d-flex  p-2 list_hover" >
-                <div class="col-5">
-                    <img src="images/information-guest-lecture.jpg" class="d-block w-100" alt="guest">
+            <div class="row d-flex p-2 list_hover" >
+                <div class="col-md-5">
+                    <img src="images/information-guest-lecture.jpg" class="img-fluid d-none d-md-flex" alt="guest">
+                    <img src="images/information-guest-lecture-mobile.jpg" class="img-fluid d-block d-md-none" alt="guest_mob">
                 </div>
-                <div class="col-7 text-secondary pt-4" >
+                <div class="col-md-7 text-secondary pt-4" >
                     <p class="h6 text-dark">Our guest lecture </p>
                     <p>
                         Join the keynote with Oliver Sack about music in medical treatment
@@ -108,7 +121,16 @@
         </div>    
     </div>
         <!-- start learning row section -->
-    <div class="row pb-4 grey_background " >
+    <section class="p-5 container-fluid d-md-none border-top">
+        <h1 class="title text-center pb-5"> Start learning</h1>
+        <h2 class="grey_background p-4">Software Engineering</h2>
+        <h2 class="grey_background p-4">Computer Art</h2>
+        <h2 class="grey_background p-4">Design</h2>
+        <h2 class="grey_background p-4">Data</h2>
+        <h2 class="grey_background p-4">Business</h2>
+        <h2 class="grey_background p-4">Marketing</h2>
+    </section>
+    <div class="row pb-4 grey_background d-none d-md-flex" >
         <div class="col">
             <div class="row" >
                 <div class="col " >
@@ -199,23 +221,23 @@
                 eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
             </p>
         </div> 
-        <div class="col-md-5 text-secondary">
-            <div class="row d-flex list_hover p-4 align-items-center">
-                <div class="col-md-4">
-                    <img src="images/thesis-fisma.jpg" class="d-block w-100" alt="fisma">
+        <div class="col-md-5 text-secondary ">
+            <div class="row list_hover p-2 align-items-center d-none d-md-flex">
+                <div class="col-md-5">
+                    <img src="images/thesis-fisma.jpg" class="img-fluid" alt="fisma">
                 </div>
-                <div class="col-md-8">
+                <div class="col-md-7 align-self-center">
                     <p class="h6 text-dark">Fisma: Design and Prototype </p>
                     <p>
                         Designer showcase of new prototype product
                     </p>
                 </div>
             </div>
-            <div class="row d-flex list_hover p-4 align-items-center">
-                <div class="col-md-4">
-                    <img src="images/thesis-now-and-then.jpg" class="d-block w-100" alt="now-then">
+            <div class="row list_hover p-2 align-items-center d-none d-md-flex">
+                <div class="col-md-5">
+                    <img src="images/thesis-now-and-then.jpg" class="img-fluid" alt="now-then">
                 </div>
-                <div class="col-md-8 ">
+                <div class="col-md-7 ">
                     <p class="h6 text-dark">Now and then</p>
                     <p>
                         Research study about New York
@@ -226,11 +248,11 @@
     </div>
     <footer >
         <div class="row text-muted d-flex  border-top pt-2 pb-5">
-            <div class="col">
+            <div class="col-md-6">
                 <p>© 2016 Colmar Academy. All rights reserved </p>
             </div>
            
-            <div class="col text-right">
+            <div class="col-md-6 flex-row-reverse text-right d-none d-md-flex">
                 <p> 
                     <span class="px-2"> Terms</span>  
                     <span> Privacy</span>  
