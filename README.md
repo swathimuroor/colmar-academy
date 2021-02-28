@@ -22,3 +22,9 @@ As it is intended to be done all on your own environment, you may not want to fo
 ## Recommendations
 
 When you see measurements in pixels, consider using [bootstrap's built in spacing](https://getbootstrap.com/docs/5.0/utilities/spacing/). This will make the site more responsive.
+
+## check the link
+https://swathimuroor.github.io/colmar-academy/
+
+## Credits
+[Aaron](https://github.com/aar9nk/colmar-academy) for the initial contribution. 
